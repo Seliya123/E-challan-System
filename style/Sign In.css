@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+.logo img{
+	max-width: 10%;
+	height: 80px;
+	margin-left: 20px;
+
+	position: relative;
+}
+header{
+	background-color:  rgb(9, 37, 33);
+	padding: auto;
+	margin: auto;
+}
+body{
+	padding: 0px;
+
+}
+.main-nav{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	font-size: 20px;
+
+}
+.main-nav li{
+    display: inline-block;
+}
+.main-nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+.main-nav li a:hover{
+    border: 2px solid white;
+}
+.row{
+    max-width: 1200px;
+    margin: 0px;
+}
+.row{
+    margin: 0 -15px;
+}
