@@ -59,10 +59,12 @@ body{
 	float: left;
 	padding: 1px;
 	width: 650px;
+	margin-top:-10px;	
 }
 .gallery img{
 	width:100%;
 	height: 380px;
+	padding-top: 0px;
 }
 footer{
 	background-color:rgb(24, 24, 46);
@@ -99,23 +101,13 @@ footer{
 	font-size: 26px;
 	margin-left: 350px;
 }
-.hero-image{
-	height: 630px;
-	width: 100%;
-}
-
-		login page css
-
-.popup_form h1{
-}
 .popup-form{
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	justify-content: space-around;
 	width: 20%; 
-	height: 50%;/*
-	justify-content: space-between;*/
+	height: 50%;
 	background-color: #A03939;
 	padding-top: 30px;
 	padding-left: 80px;
@@ -127,7 +119,7 @@ footer{
 }
 
 .input-field{
-padding-top: : 3rem;
+padding-top:  3rem;
 border: none;
 outline: none;
 border-radius: .1rem;
@@ -168,3 +160,55 @@ color: #fff;
 .hide{
 	display: none;
 }
+.slideshow-container {
+	max-width: 1350px;
+	position: relative;
+	margin: auto;
+  }
+  
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 10px;
+	color: rgb(252, 217, 217);
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+  .dot {
+	cursor:pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: rgb(20, 240, 31);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	margin-bottom: 30px;
+  }  
+  
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
