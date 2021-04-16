@@ -42,6 +42,15 @@ body{
 .main-nav li a:hover{
     border: 2px solid white;
 }
+.Signin-btn{
+	width=80px;
+	height=30px;
+	background=Transparent;
+	color=#fff;
+	border=none;
+	font-size=18px;
+}
+
 .row{
     max-width: 1200px;
     margin: 0px;
@@ -137,15 +146,6 @@ border-radius: .1rem;
 	background-color: rgb(210, 210, 210);
 } 
 
-.submit-btn{
-
-width: 8rem;
-font-size: 1rem;
-font-weight: bold;
-padding: .5rem 1rem;
-background-color: #0000FF;
-color: #fff; 
-}
 
 .submit-button:hover, .submit-btn:focus{
 	background-color: coral;
