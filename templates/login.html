@@ -1,0 +1,43 @@
+{% load static %}
+
+
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <!-- <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{% static 'style/login.css' %}">
+      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
+  
+      <title>Login form</title>
+    </head>
+
+<body>   
+    <h2>E-Challan System</h2><br>    
+    <div class="login">    
+        <h1>Login</h1>
+    <form id="login" method="POST">
+        {% csrf_token %}    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="username" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="password" name="password" id="Pass" placeholder="Password">    
+        <br><br>    
+        <input type="submit" name="log" id="log" value="Log In Here">       
+        <br><br>          
+    </form>
+    <div>
+      <p>
+        <a href="{% url 'index' %}">Return to Home Page</a>
+      </p>
+    </div>     
+</div>    
+</body>    
+</html>    
